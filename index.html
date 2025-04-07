@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>апле мюзик</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>Apple Music</header>
+  <div class="music-app">
+    <div class="sidebar">
+      <h3>Library</h3>
+      <select id="trackSelector" style="width: 100%; padding: 8px;"></select>
+    </div>
+    <div class="main">
+      <div class="now-playing">
+        <img class="album-art" id="albumArt" src="" alt="Album Art">
+        <div class="song-info">
+          <div class="song-title" id="songTitle"></div>
+          <div class="artist" id="artist"></div>
+        </div>
+        <div class="controls">
+          <button onclick="prevTrack()">⏮️</button>
+          <button onclick="togglePlay()" id="playBtn">▶️</button>
+          <button onclick="nextTrack()">⏭️</button>
+        </div>
+        <audio id="audio"></audio>
+      </div>
+      <div class="playlist" id="playlistContainer"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
